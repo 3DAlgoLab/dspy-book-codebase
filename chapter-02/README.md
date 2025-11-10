@@ -10,7 +10,7 @@ Make sure you have a running environment with all packages installed.
 
 Install Deno: Download from [Deno Download Page](https://docs.deno.com/runtime/getting_started/installation/)
 
-NOTE - Deno is needed by CodeAct and ProgramOfThought.
+NOTE - Deno is needed by CodeAct and PoT.
 
 ## Example Scripts in Chapter 2
 
@@ -136,6 +136,7 @@ print(investment_details)
 Final Portfolio Value: 321473.53
 Total Contributions: 130000.0
 Total Earnings: 191473.53
+```
 ```
 
 ```bash
