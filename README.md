@@ -139,6 +139,11 @@ For model names and specifications, refer to:
   - [example-10-refine-customer-support.py](chapter-02/example-10-refine-customer-support.py): Iterative refinement of customer support responses.
   - [example-11-parallel.py](chapter-02/example-11-parallel.py): Parallel processing of multiple predictions.
   - [example-12-pipeline.py](chapter-02/example-12-pipeline.py): Building multi-stage pipelines for medical diagnosis.
+- [Chapter 3](chapter-03/): Guardrails and Evaluation Techniques
+  - [Chapter 3 README](chapter-03/README.md): Chapter-specific notes on guardrails and evaluation, example script list, run instructions and sample outputs.
+  - [example-1-guardrail-regex.py](chapter-03/example-1-guardrail-regex.py): Regex-based guardrails for detecting sensitive data (account numbers, folio numbers) and checking for legal disclaimers.
+  - [example-2-guardrail-llm-as-judge.py](chapter-03/example-2-guardrail-llm-as-judge.py): Using LLM as a judge to evaluate investment compliance, detecting unlicensed advice and guaranteed return promises.
+  - [example-3-support-bot.py](chapter-03/example-3-support-bot.py): Building and evaluating a customer support chatbot with custom quality metrics and DSPy's Evaluate framework.
 - [Chapter 7](chapter-07/): MLflow Integration Examples
   - [Chapter 7 README](chapter-07/README.md): Contains setup instructions for MLflow server and examples of:
     - [Basic QA MLflow Integration](chapter-07/example-1-basic-qa-mlflow-integration.py)
