@@ -9,7 +9,7 @@
       - [Alternative Models](#alternative-models)
         - [OpenAI](#openai)
         - [Anthropic](#anthropic)
-  - [Notes](#notes)
+  - [Chapter wise Code and Description](#notes)
 <!-- /TOC -->
 
 ## Setup
@@ -113,7 +113,7 @@ For model names and specifications, refer to:
 
 ---
 
-## Notes
+## Chapter wise Code and Description  
 - Each chapter's code is located in its respective folder
 
 - [Chapter 1](chapter-01/): Introductory DSPy examples
@@ -144,6 +144,8 @@ For model names and specifications, refer to:
   - [example-1-guardrail-regex.py](chapter-03/example-1-guardrail-regex.py): Regex-based guardrails for detecting sensitive data (account numbers, folio numbers) and checking for legal disclaimers.
   - [example-2-guardrail-llm-as-judge.py](chapter-03/example-2-guardrail-llm-as-judge.py): Using LLM as a judge to evaluate investment compliance, detecting unlicensed advice and guaranteed return promises.
   - [example-3-support-bot.py](chapter-03/example-3-support-bot.py): Building and evaluating a customer support chatbot with custom quality metrics and DSPy's Evaluate framework.
+- [Chapter 4](chapter-04/README.md) RepoRank - Capstone Project
+  - [main.py](chapter-04/reporank/main.py): Main entry point for the RepoRank capstone project  
 - [Chapter 7](chapter-07/): MLflow Integration Examples
   - [Chapter 7 README](chapter-07/README.md): Contains setup instructions for MLflow server and examples of:
     - [Basic QA MLflow Integration](chapter-07/example-1-basic-qa-mlflow-integration.py)
