@@ -146,6 +146,12 @@ For model names and specifications, refer to:
   - [example-3-support-bot.py](chapter-03/example-3-support-bot.py): Building and evaluating a customer support chatbot with custom quality metrics and DSPy's Evaluate framework.
 - [Chapter 4](chapter-04/README.md) RepoRank - Capstone Project
   - [main.py](chapter-04/reporank/main.py): Main entry point for the RepoRank capstone project  
+- [Chapter 5](chapter-05/): Model Context Protocol (MCP)
+  - [Chapter 5 README](chapter-05/README.md): Setup instructions using `uv` and MCP introduction.
+  - [example-1-connect-to-playwright.py](chapter-05/example-1-connect-to-playwright.py): Connecting to a Playwright MCP server.
+  - [example-2-react-agent-mcp-server.py](chapter-05/example-2-react-agent-mcp-server.py): Building a trivial ReAct agent that uses an MCP server.
+  - [example-3-fastmcp-server.py](chapter-05/example-3-fastmcp-server.py): Creating a fast MCP server.
+  - [example-3-fastmcp-client.py](chapter-05/example-3-fastmcp-client.py): Client for the fast MCP server.
 - [Chapter 7](chapter-07/): MLflow Integration Examples
   - [Chapter 7 README](chapter-07/README.md): Contains setup instructions for MLflow server and examples of:
     - [Basic QA MLflow Integration](chapter-07/example-1-basic-qa-mlflow-integration.py)
