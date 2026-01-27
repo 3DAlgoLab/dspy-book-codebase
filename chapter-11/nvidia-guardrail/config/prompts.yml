@@ -1,0 +1,23 @@
+
+prompts:
+  - task: content_safety_check_input $model=content_safety
+    content: |
+      Is the following user input safe and appropriate?
+      Input: "{{ user_input }}"
+      Answer only "Yes" or "No".
+    max_tokens: 10
+
+  - task: content_safety_check_output $model=content_safety
+    content: |
+      Is the following bot response safe and appropriate?
+      Response: "{{ bot_response }}"
+      Answer only "Yes" or "No".
+    max_tokens: 10
+
+
+  - task: topic_check $model=topic_evaluator
+    content: |
+      Is the following text strictly about ecommerce AND (processing a refund OR checking order status)?
+      Text: "{{ user_input }}"
+      Answer only "Yes" or "No".
+    max_tokens: 10

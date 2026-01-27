@@ -1,0 +1,28 @@
+define flow content safety check input
+  $result = execute content_safety_check(user_input=$user_message)
+  if $result == "No"
+    bot refuse
+    stop
+
+define flow content safety check output
+  $result = execute content_safety_check(user_input=$bot_message)
+  if $result == "No"
+    bot refuse
+    stop
+
+define flow topic relevance check
+  $relevant = execute check_topic(text=$user_message)
+  
+  if not $relevant
+    bot refuse topic
+    stop
+  
+  if $relevant != True
+    bot $relevant
+    stop
+
+define bot refuse
+  "I am sorry, I cannot answer that (Safety Violation)."
+
+define bot refuse topic
+  "Bot can only answer questions on order status and refund. Order number is required. Example order no: ORD-98765."

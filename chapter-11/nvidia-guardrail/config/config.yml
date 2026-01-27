@@ -1,0 +1,27 @@
+models:
+  - type: main
+    engine: ollama
+    model: gemma3:4b
+    parameters:
+      base_url: http://localhost:11434
+
+  - type: content_safety
+    engine: ollama
+    model: shieldgemma
+    parameters:
+      base_url: http://localhost:11434
+
+  - type: topic_evaluator
+    engine: ollama
+    model: gemma3:4b
+    parameters:
+      base_url: http://localhost:11434
+
+rails:
+  input:
+    flows:
+      - content safety check input $model=content_safety
+      - topic relevance check
+  output:
+    flows:
+      - content safety check output $model=content_safety
