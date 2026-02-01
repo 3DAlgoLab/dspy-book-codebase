@@ -169,3 +169,21 @@ For model names and specifications, refer to:
   - [example-8-llm-as-a-query-router.py](chapter-08/example-8-llm-as-a-query-router.py): Implementation of a query router using an LLM to decompose complex queries.
   - [example-8-weavite-rag.py](chapter-08/example-8-weavite-rag.py): Using Weaviate's native Generative Search (RAG) capabilities with `near_text`.
   - [example-9-re-ranker-hybrid.py](chapter-08/example-9-re-ranker-hybrid.py): Advanced RAG system with Hybrid Retrieval and a custom DSPy Listwise Reranker.
+- [Chapter 11](chapter-11/): Production Patterns and Advanced Techniques
+  - [example_1_stream_response.py](chapter-11/example_1_stream_response.py): Streaming responses with FastAPI and DSPy StreamListener for real-time chat applications.
+  - [example_2_fallback.py](chapter-11/example_2_fallback.py): Multi-tier model fallback strategy with primary, secondary, and tertiary LLM configurations.
+  - [example_3_circuit_breaker.py](chapter-11/example_3_circuit_breaker.py): Circuit breaker pattern implementation for resilient API calls to language models.
+  - [example_4_sample_nginx_conf_rate_limiting.conf](chapter-11/example_4_sample_nginx_conf_rate_limiting.conf): Nginx configuration for rate limiting AI API endpoints.
+  - [example_5_sample_weavite_semantic_search.py](chapter-11/example_5_sample_weavite_semantic_search.py): Semantic search implementation using Weaviate for document retrieval.
+  - [example_6_presidio_pii.py](chapter-11/example_6_presidio_pii.py): PII data detection and anonymization using Presidio for privacy compliance.
+  - [example_7_nh3_sanitizer.py](chapter-11/example_7_nh3_sanitizer.py): Text sanitization and content filtering for safe AI interactions.
+  - [example_8_active_learning_loop.py](chapter-11/example_8_active_learning_loop.py): Active learning implementation with human feedback integration.
+  - [example_12_cap_repetitive_react_loops.py](chapter-11/example_12_cap_repetitive_react_loops.py): Preventing infinite loops in ReAct agents with iteration caps.
+  - [example_18_agent_watchdog.py](chapter-11/example_18_agent_watchdog.py): Agent monitoring and health checking with watchdog patterns.
+  - [example_20_max_tool_call.py](chapter-11/example_20_max_tool_call.py): Limiting tool usage in agents to prevent abuse and control costs.
+  - [example_gemini_invoking_native_tools.py](chapter-11/example_gemini_invoking_native_tools.py): Gemini native function calling and tool integration examples.
+  - [qa_agent.py](chapter-11/qa_agent.py): Comprehensive QA agent implementation with structured data handling.
+  - [agent_watchdog.py](chapter-11/agent_watchdog.py): Standalone agent monitoring system for production deployments.
+  - [nvidia-guardrail/](chapter-11/nvidia-guardrail/): NVIDIA NeMo Guardrails integration for safety and compliance
+    - [example_nemo_guardrail.py](chapter-11/nvidia-guardrail/example_nemo_guardrail.py): Product catalog agent with safety guardrails and input validation.
+    - [config/](chapter-11/nvidia-guardrail/config/): Guardrail configuration files including safety policies and prompts.
