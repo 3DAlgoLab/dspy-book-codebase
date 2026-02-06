@@ -5,8 +5,7 @@ import dspy
 from utils import setup_dspy
 
 class FeedbackAnalysisSignature(dspy.Signature):
-    """Analyze customer feedback and extract key themes categorized as positive or
-    negative."""
+    """Analyze customer feedback and extract key themes categorized as positive or negative."""
     feedback = dspy.InputField(desc="Customer feedback text to analyze")
     analysis = dspy.OutputField(desc="JSON format with themes categorized as 'positive' or 'negative'. Overall structure of JSON to resemble {'themes':{'negative':[], 'positive':[]}}")
 
